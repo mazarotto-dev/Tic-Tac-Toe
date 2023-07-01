@@ -193,7 +193,15 @@ function winnerViewO() {
     })
 }
 
-window.addEventListener('DOMContentLoaded', initializeGame)
+window.addEventListener('DOMContentLoaded', function () {
+
+    if (playerX === null || playerO === null) {
+        alert('Você não pode jogar sem um jogador!')
+        location.href = 'index.html'
+    } else {
+        initializeGame()
+    }
+})
 
 theme.value = sessionStorage.getItem('themeSelected')
 
@@ -242,3 +250,8 @@ theme.addEventListener('change', function () {
     sessionStorage.setItem('select', root.style.getPropertyValue('--select'))
     sessionStorage.setItem('selected', root.style.getPropertyValue('--selected'))
 })
+
+
+if (theme.value === '') {
+    theme.value = 'purple-theme'
+}
