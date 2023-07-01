@@ -1,2 +1,2 @@
-# tic-tac-toe
- 
+# Tic Tac Toe
+Criar um Tic Tac Toe usando HTML, CSS e JavaScript foi uma experiência para mim. Durante o desenvolvimento, pude explorar e aprender mais sobre a linguagem JavaScript e o Document Object Model (DOM). Foi gratificante implementar a lógica do jogo, manipular elementos HTML dinamicamente e aplicar as regras do jogo para verificar vitórias e alternar entre os jogadores. Essa experiência me ajudou a aprimorar minhas habilidades em JavaScript, entender como interagir com o DOM e aprofundar minha compreensão dos conceitos fundamentais da linguagem. Além disso, criar um jogo interativo me permitiu explorar aspectos de usabilidade e fornecer uma experiência envolvente para os jogadores.
