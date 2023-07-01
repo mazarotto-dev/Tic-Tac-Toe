@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="/javascript/index.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+        <select name="theme" id="theme">
+            <option value="purple-theme">Tema Roxo</option>
+            <option value="cyan-theme">Tema Ciano</option>
+            <option value="yellow-theme">Tema Amarelo</option>
+            <option value="green-theme">Tema Verde</option>
+        </select>
+    </header>
+    <main id="players">
+        <div>
+            <h1>Jogadores</h1>
+            <form id="players-form">
+                <div>
+                    <label for="player-one">X</label>
+                    <input maxlength="8" type="text" name="player-one" id="player-one" required>
+                </div>
+                <div>
+                    <label for="player-two">O</label>
+                    <input maxlength="8" type="text" name="player-two" id="player-two" required>
+                </div>
+                <div>
+                    <input type="submit" value="Jogar">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &#169; 2023 Todos os direitos reservados a 
+            <a href="https://github.com/mazarottoo">Mazarottoo</a>.</p>
+    </footer>   
+
+</body>
+</html>

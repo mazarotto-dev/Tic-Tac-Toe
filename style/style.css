@@ -1,0 +1,287 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/vyg7swb.css");
+
+:root {
+    --background: #7A2653;
+    --main: #E8E8E8;
+    --footer-fonte: #FF7AC1;
+    --select: #ff7ac18a;
+    --selected: #FF7AC1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rig Sans', sans-serif;
+}
+
+*::selection {
+    background-color: var(--selected);
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--background);
+    color: #fff;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    flex: 1 1 auto;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header > select {
+    color: var(--background);
+    font-weight: bold;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+}
+
+header > select > option {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    font-weight: bold;
+    padding: 10px;
+}
+
+header > select > option:checked {
+    background-color: var(--footer-fonte);
+    color: #fff;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+main#players > div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    height: 300px;
+    width: 98%;
+    max-width: 400px;
+    background-color: var(--main);
+    color: var(--background);
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+main > div > form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+main > div > form > div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+}
+
+main > div > form > div > input {
+    width: 70%;
+    background-color: var(--background);
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+}
+
+
+
+main > div > form > div input[type="submit"] {
+    padding: 10px;
+    justify-content: center;
+    width: 50%;
+    cursor: pointer;
+}
+
+main > div > form > div input[type="submit"]:hover {
+    background-color: var(--footer-fonte);
+    transition: .5s ease;
+}
+
+/* Main GAME */
+
+main > div#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+main > div#game > div.winners {
+    display: none;
+}
+
+main > div#game > div.winners-ativo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    color: var(--background);
+    text-align: center;
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+#winner-view {
+    font-weight: bold;
+}
+
+main > div#game > div.winners > div.winner-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+main > div#game > div.winners > div.winner-buttons > button {
+    background-color: var(--background);
+    color: var(--main);
+    border: none;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+main > div#game > div.tictactoe {
+    width: 100%;
+    
+}
+
+main > div#game > div.tictactoe > div.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > div#game > div.tictactoe > div.row > span {
+    border-left: 5px solid var(--selected);
+    border-bottom: 5px solid var(--selected);
+    height: 100px;
+    width: 100px;
+    font-size: 4rem;
+    color: var(--selected);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+}
+
+
+@media screen and (min-width: 768px) {
+    main > div#game {
+        margin: 30px 0;
+    }
+
+    main > div#game > div.tictactoe > div.row > span {
+        height: 150px;
+        width: 500px;
+        font-size: 5rem;
+    }
+
+    main > div#game > div.winners-ativo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+        color: var(--background);
+        text-align: center;
+        position: absolute;
+        width: 470px;
+        height: 470px;
+        background-color: #ffffff;
+        border-radius: 12px;
+    }
+}
+
+main > div#game > div.tictactoe > div.row > span:hover {
+    transition: .5s ease;
+    background-color: var(--select);
+}
+
+main > h2 {
+    border: 5px solid var(--select);
+    padding: 10px;
+    border-radius: 12px;
+    width: 14.9rem;
+}
+
+#no-border {
+    border-left: none !important;
+}
+
+.bottom {
+    border-bottom: none !important;
+}
+
+.win {
+    color: #aeffbb !important;
+    background-color: #00ab00;
+}
+
+.win:hover {
+    color: #00ab00 !important;
+    background-color: #aeffbb !important;
+}
+
+.disable {
+    cursor: no-drop !important;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    flex-basis: 1 1 auto;
+    flex-direction: column;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: var(--footer-fonte);
+}
+
+footer > p > a:hover {
+    opacity: .5;
+    transition: .5s ease;
+}
+

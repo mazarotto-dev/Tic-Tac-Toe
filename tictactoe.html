@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css" media="all">
+    <script src="javascript/tictac.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+        <select name="theme" id="theme">
+            <option value="purple-theme">Tema Roxo</option>
+            <option value="cyan-theme">Tema Ciano</option>
+            <option value="yellow-theme">Tema Amarelo</option>
+            <option value="green-theme">Tema Verde</option>
+        </select>
+    </header>
+    <main>
+        <h2 id="view">Vez de: <span id="player-view"></span></h2>
+        <div id="game">
+            <div class="tictactoe">
+                <div class="row">
+                    <span class="cursorPointer" id="no-border" data-game="0.0"></span>
+                    <span class="cursorPointer" data-game="0.1"></span>
+                    <span class="cursorPointer" data-game="0.2"></span>
+                </div>
+                <div class="row">
+                    <span class="cursorPointer" id="no-border" data-game="1.0"></span>
+                    <span class="cursorPointer" data-game="1.1"></span>
+                    <span class="cursorPointer" data-game="1.2"></span>
+                </div>
+                <div class="row">
+                    <span id="no-border" class="bottom cursorPointer" data-game="2.0"></span>
+                    <span class="bottom cursorPointer" data-game="2.1"></span>
+                    <span class="bottom cursorPointer" data-game="2.2"></span>
+                </div>
+            </div>
+            <div class="winners">
+                <div class="texts">
+                    <h1 id="player-name"></h1>
+                    <p>
+                        O usuário <span id="winner-view"></span> ganhou!
+                    </p>
+                </div>
+                <div class="winner-buttons">
+                    <button id="play-again" type="submit">Jogar Novamente</button>
+                    <button id="initial-page" type="button">Página Inicial</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &#169; 2023 Todos os direitos reservados a 
+            <a href="https://github.com/mazarottoo">Mazarottoo</a>.</p>
+    </footer>    
+</body>
+</html>
