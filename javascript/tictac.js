@@ -129,6 +129,10 @@ function win() {
         playAgain.addEventListener('click', function () {
         initializeGame()   
     })
+
+        initialPage.addEventListener('click', function () {
+            window.location.href = 'index.html'
+        })
     }
     
     if (

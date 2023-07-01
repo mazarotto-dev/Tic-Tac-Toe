@@ -179,6 +179,7 @@ main > div#game > div.winners > div.winner-buttons > button {
     font-weight: bold;
     border-radius: 12px;
     padding: 10px;
+    cursor: pointer;
 }
 
 main > div#game > div.tictactoe {
