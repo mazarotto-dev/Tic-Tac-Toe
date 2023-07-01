@@ -13,6 +13,11 @@ root.style.setProperty('--selected', rootSelected)
 
 theme.value = sessionStorage.getItem('themeSelected')
 
+if (theme.value === '') {
+    theme.value = 'purple-theme'
+}
+
+
 theme.addEventListener('change', function () {
     console.log('Tema selecionado:', theme.value);
 
